@@ -1,0 +1,161 @@
+﻿<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>義式料理</title>
+    <link href="./CSS/style8.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        c = 0;
+        $(document).ready(function() {
+            clock = setInterval(auto, 3000)
+
+            function auto() {
+                $("#imgTurn img").fadeOut(400, function() {
+                    $("#imgTurn img").attr("src", "img/page5/turn_" + c + ".jpg")
+                    $("#imgTurn img").fadeIn()
+                })
+                c++;
+                if (c >= 4) {
+                    c = 0
+                }
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <div id="middle">
+        <div id=imgTurn_all>
+            <div id=imgTurn>
+                <img id=pictureTurn src="img/page5/turn_0.jpg">
+            </div>
+        </div>
+        <div id="menu">
+            <div class="item">
+                <div class="main">頂級奢華</div>
+                <div class="sub">
+                    <ul>
+                        <li>義大利麵</li>
+                        <li>披薩</li>
+                        <li>Pasta</li>
+                        <li>Pizza</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="main">豪華饗宴</div>
+                <div class="sub">
+                    <ul>
+                        <li>義大利麵</li>
+                        <li>披薩</li>
+                        <li>Pasta</li>
+                        <li>Pizza</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="main">精緻餐食</div>
+                <div class="sub">
+                    <ul>
+                        <li>義大利麵</li>
+                        <li>披薩</li>
+                        <li>Pasta</li>
+                        <li>Pizza</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="main">經濟實惠</div>
+                <div class="sub">
+                    <ul>
+                        <li>義大利麵</li>
+                        <li>披薩</li>
+                        <li>Pasta</li>
+                        <li>Pizza</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="main">平價選擇</div>
+                <div class="sub">
+                    <ul>
+                        <li>義大利麵</li>
+                        <li>披薩</li>
+                        <li>Pasta</li>
+                        <li>Pizza</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+                $(".sub").slideUp(0) //在進入網頁的時候隱藏所有class=sub的子選單，(0)表示0秒
+                for (i = 0; i < $(".main").length; i++) {
+                    $(".main:eq(" + i + ")").mouseover({ //當游標移進來的時候
+                        j: i
+                    }, function(e) {
+                        n = e.data.j
+                        $(".sub:eq(" + n + ")").slideToggle() //執行子選單滑動
+                        $(".sub:not(:eq(" + n + "))").slideUp() //非當前選中的其他子選單隱藏
+                    })
+                }
+            })
+        </script>
+        <div class="pic1">
+            <img id="bg1" src="img/page8/food_0.jpg" title="義大利麵丸子">
+            <img id="bg2" src="img/page8/food_1.jpg" title="夏威夷披薩">
+            <img id="bg3" src="img/page8/food_3.jpg" title="披薩夏威夷">
+        </div>
+        <div class="pic2">
+            <img id="bg4" src="img/page8/food_2.jpg" title="貢丸">
+            <img id="bg5" src="img/page8/food_4.jpg" title="番茄義大利麵">
+            <img id="bg6" src="img/page8/food_5.jpg" title="丸子">
+        </div>
+        <div class="pic3">
+            <img id="bg7" src="img/page8/food_4.jpg" title="貢丸">
+            <img id="bg8" src="img/page8/food_1.jpg" title="番茄義大利麵">
+            <img id="bg9" src="img/page8/food_0.jpg" title="丸子">
+        </div>
+        <script>
+            $("#bg1").click(function() {
+                alert('義大利麵（義大利語：Pasta），泛指所有源自義大利的麵食。在義大利，一般會用「Pasta」來稱呼各種由麵粉及水、有時或會加入雞蛋。狹義的義式麵體是由杜蘭麵粉所製，廣義則可包括由其他穀物為原料所製成的麵體。');
+            })
+            $("#bg2").click(function() {
+                alert('義大利麵的特點是有很多種不同的式樣，如長條形的義大利直麵（Spaghetti）、半月形管狀的通心粉（Macaroni）、扭曲狀的螺旋麵（Fusilli）等，種類繁多。除了義大利與歐洲外，義大利麵在世界各地也擁有高度的普及性。');
+            })
+            $("#bg3").click(function() {
+                alert('Pasta這個字與英語中的「paste」意思近似，都可指用開水與粉狀物混和的東西。');
+            })
+            $("#bg4").click(function() {
+                alert('一般來說，義大利麵都會用一種稱為杜蘭（Durum）的小麥粉製成。市面上販售的義式麵條有乾濕兩種型態。');
+            })
+            $("#bg5").click(function() {
+                alert('通常在烹調前，都會燒開一鍋熱水，才把麵食放進熱水裡，以免麵食貼著煮鍋。煮麵時要不斷輕輕攪拌鍋裡的麵，以免麵食貼在鍋裡。當麵食煮至軟硬適中時，就可撈起備用。');
+            })
+            $("#bg6").click(function() {
+                alert('義大利麵通常與肉類或調味料一起吃。一般會把配料與麵食分開來煮，待配料煮好，才把準備好的麵食放進配料內拌好再煮。現時很多比較大型的超級市場都會有即食的義大利麵醬料售賣，有瓶裝或袋裝的。');
+            })
+            $("#bg7").click(function() {
+                alert('一般來說，義大利麵都會用一種稱為杜蘭（Durum）的小麥粉製成。市面上販售的義式麵條有乾濕兩種型態。');
+            })
+            $("#bg8").click(function() {
+                alert('通常在烹調前，都會燒開一鍋熱水，才把麵食放進熱水裡，以免麵食貼著煮鍋。煮麵時要不斷輕輕攪拌鍋裡的麵，以免麵食貼在鍋裡。當麵食煮至軟硬適中時，就可撈起備用。');
+            })
+            $("#bg9").click(function() {
+                alert('義大利麵通常與肉類或調味料一起吃。一般會把配料與麵食分開來煮，待配料煮好，才把準備好的麵食放進配料內拌好再煮。現時很多比較大型的超級市場都會有即食的義大利麵醬料售賣，有瓶裝或袋裝的。');
+            })
+        </script>
+        <div>
+            <span id=copyright>
+                &copy; 2019 義式料理 All rights reserved.
+            </span>
+            <span id=home>
+                <a href="index.html">回首頁</a>
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>

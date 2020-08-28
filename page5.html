@@ -1,0 +1,134 @@
+﻿<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>甜點教學</title>
+    <link href="./CSS/style5.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#imgTurn_menu img:eq(0)").click(function() {
+                n = 0
+                change()
+            })
+            $("#imgTurn_menu img:eq(1)").click(function() {
+                n = 1
+                change()
+            })
+            $("#imgTurn_menu img:eq(2)").click(function() {
+                n = 2
+                change()
+            })
+            $("#imgTurn_menu img:eq(3)").click(function() {
+                n = 3
+                change()
+            })
+            n = 0
+            clock = setInterval(auto, 3000)
+            $("#imgTurn img").mouseover(function() {
+                clearInterval(clock)
+            })
+            $("#imgTurn img").mouseout(function() {
+                clock = setInterval(auto, 3000)
+            })
+
+            function auto() {
+                n++
+                if (n > 3) {
+                    n = 0
+                }
+                change()
+            }
+
+            function change() {
+                $("#imgTurn img").fadeOut(400, function() {
+                    $("#imgTurn img").attr("src", "img/page5/turn_" + n + ".jpg")
+                    $("#imgTurn img").fadeIn()
+                })
+                $("#imgTurn_menu img").attr("src", "img/page5/dot.png")
+                $("#imgTurn_menu img:eq(" + n + ")").attr("src", "img/page5/dot2.png")
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <div id=left>
+        <img id=logo src="img/page5/logo_5.png">
+        <div class="left_title">
+            <img class=sakura src="img/page5/sakura.png">
+            <a href=""><img class=little_title src="img/page5/page5_a1.png"></a>
+        </div>
+        <div class="left_title">
+            <img class=sakura src="img/page5/sakura.png">
+            <a href=""><img class=little_title src="img/page5/page5_a2.png"></a>
+        </div>
+        <div class="left_title">
+            <img class=sakura src="img/page5/sakura.png">
+            <a href=""><img class=little_title src="img/page5/page5_a3.png"></a>
+        </div>
+        <div class="left_title">
+            <img class=sakura src="img/page5/sakura.png">
+            <a href=""><img class=little_title src="img/page5/page5_a4.png"></a>
+        </div>
+        <div>
+            <h5 id=home_page><a href="index.html">回到首頁</a></h5>
+        </div>
+    </div>
+    <div id=middle>
+        <div id=imgTurn_all>
+            <div id=imgTurn>
+                <img id=pictureTurn src="img/page5/turn_0.jpg">
+            </div>
+            <div id=imgTurn_menu>
+                <img src="img/page5/dot2.png"><img src="img/page5/dot.png"><img src="img/page5/dot.png"><img src="img/page5/dot.png">
+            </div>
+        </div>
+        <div id=paper1>
+            <h1>本月課程資訊</h1>
+            <p>
+                2019.6.11<br>
+                &emsp;&emsp;&emsp;夏季學甜點 ❤ 本月熱門！<br>
+                &emsp;&emsp;&emsp;教學——巧克力奶霜蛋糕～<a href="https://">點我觀看詳細！</a>
+            </p>
+            <p>
+                2019.6.20<br>
+                &emsp;&emsp;&emsp;夏季學甜點 ❤ 本月熱門！<br>
+                &emsp;&emsp;&emsp;教學——巧克力奶霜蛋糕～<a href="https://">點我觀看詳細！</a>
+            </p>
+            <p>
+                2019.6.28<br>
+                &emsp;&emsp;&emsp;夏季學甜點 ❤ 本月熱門！<br>
+                &emsp;&emsp;&emsp;教學——巧克力奶霜蛋糕～<a href="https://">點我觀看詳細！</a>
+            </p>
+
+        </div>
+        <div id=paper2>
+            <h1>～經典甜品～</h1>
+            <span>
+                <img src="img/page1/food_01.jpg" height="90" width="90" class="dessert">
+            </span>
+            <span class="desName">
+                彩虹四層蛋糕
+            </span>
+            <span>
+                <img src="img/page1/food_08.jpg" height="90" width="90" class="dessert">
+            </span>
+            <span class="desName">
+                手工馬克杯莓果布丁
+            </span>
+            <span>
+                <img src="img/page1/food_07.jpg" height="90" width="90" class="dessert">
+            </span>
+            <span class="desName">
+                法式甜點可麗露Canelé
+            </span>
+        </div>
+        <div id=copyright>
+            &copy; 2019 甜點教學 All rights reserved.
+        </div>
+    </div>
+</body>
+
+</html>

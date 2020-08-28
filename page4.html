@@ -1,0 +1,111 @@
+﻿<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>甜點介紹</title>
+    <link href="./CSS/style4.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $(".des1").click(function() {
+                n = 1
+                change()
+            })
+            $(".des2").click(function() {
+                n = 2
+                change()
+            })
+            $(".des3").click(function() {
+                n = 3
+                change()
+            })
+            $(".des4").click(function() {
+                n = 4
+                change()
+            })
+            $(".des5").click(function() {
+                n = 5
+                change()
+            })
+            $(".des6").click(function() {
+                n = 6
+                change()
+            })
+            $(".des7").click(function() {
+                n = 7
+                change()
+            })
+            $(".des8").click(function() {
+                n = 8
+                change()
+            })
+            $(".des9").click(function() {
+                n = 9
+                change()
+            })
+            $(".des10").click(function() {
+                n = 10
+                change()
+            })
+        })
+
+        function change() {
+            $("#text").fadeOut(300, function() {
+                $("#text").attr("src", "img/page4/text_" + n + ".png")
+                $("#text").fadeIn()
+            })
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <span><img class="des1" src="img/page4/des1_h.png">
+            <img class="des1" src="img/page4/des1.jpg"></span>
+        <span><img class="des2" src="img/page4/des2_h.png">
+            <img class="des2" src="img/page4/des2.jpg"></span>
+        <span><img class="des3" src="img/page4/des3_h.png">
+            <img class="des3" src="img/page4/des3.jpg"></span>
+        <span><img class="des4" src="img/page4/des4_h.png">
+            <img class="des4" src="img/page4/des4.jpg"></span>
+        <span><img class="des5" src="img/page4/des5_h.png">
+            <img class="des5" src="img/page4/des5.jpg"></span>
+        <span><img class="des6" src="img/page4/des6_h.png">
+            <img class="des6" src="img/page4/des6.jpg"></span>
+        <span><img class="des7" src="img/page4/des7_h.png">
+            <img class="des7" src="img/page4/des7.jpg"></span>
+        <span><img class="des8" src="img/page4/des8_h.png">
+            <img class="des8" src="img/page4/des8.jpg"></span>
+        <span><img class="des9" src="img/page4/des9_h.png">
+            <img class="des9" src="img/page4/des9.jpg"></span>
+        <span><img class="des10" src="img/page4/des10_h.png">
+            <img class="des10" src="img/page4/des10.jpg"></span>
+        <img id="logo" src="img/page4/logo.png">
+        <a href="index.html"><img id="home" src="img/page4/home.png"></a>
+        <img id="text" src="img/page4/no.png">
+        <audio src="media/Hiiltop.mp3" controls autoplay loop></audio>
+        <div id="muteYouTubeVideoPlayer"></div>
+        <script async src="https://www.youtube.com/iframe_api"></script>
+        <script>
+            function onYouTubeIframeAPIReady() {
+                var player;
+                player = new YT.Player('muteYouTubeVideoPlayer', {
+                    videoId: 'wvB9tcpI2Kw', // YouTube 影片ID
+                    playerVars: {
+                        autoplay: 1, // 在讀取時自動播放影片
+                        loop: 1, // 讓影片循環播放
+                        autohide: 0 // 當播放影片時隱藏影片控制列
+                    },
+                    events: {
+                        onReady: function(e) {
+                            e.target.mute();
+                        }
+                    }
+                });
+            }
+        </script>
+    </div>
+</body>
+
+</html>

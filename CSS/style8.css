@@ -1,0 +1,232 @@
+body {
+    background-image: url(../img/page8/bg.jpg);
+    font-family: 'Noto Serif TC', serif;
+    color: white;
+}
+
+#bg1 {
+    width: 30%;
+    height: 200;
+    cursor: pointer;
+    opacity: 0.85;
+    padding-right: 2%;
+}
+
+#bg2 {
+    width: 30%;
+    height: 200;
+    cursor: pointer;
+    opacity: 0.85;
+    padding-right: 2%;
+}
+
+#bg3 {
+    width: 30%;
+    height: 200;
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+#bg4 {
+    width: 30%;
+    height: 200;
+    cursor: pointer;
+    opacity: 0.85;
+    padding-right: 2%;
+}
+
+#bg5 {
+    width: 30%;
+    height: 200;
+    cursor: pointer;
+    opacity: 0.85;
+    padding-right: 2%;
+}
+
+#bg6 {
+    width: 30%;
+    height: 200;
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+#bg7 {
+    width: 30%;
+    height: 200;
+    cursor: pointer;
+    opacity: 0.85;
+    padding-right: 2%;
+}
+
+#bg8 {
+    width: 30%;
+    height: 200;
+    cursor: pointer;
+    opacity: 0.85;
+    padding-right: 2%;
+}
+
+#bg9 {
+    width: 30%;
+    height: 200;
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.pic1 {
+    position: absolute;
+    width: 96%;
+    padding-left: 4%;
+    top: 430;
+}
+
+.pic2 {
+    position: absolute;
+    width: 96%;
+    padding-left: 4%;
+    top: 650;
+}
+
+.pic3 {
+    position: absolute;
+    width: 96%;
+    padding-left: 4%;
+    top: 870;
+}
+
+#bg1:hover {
+    transition: opacity 0.3s linear;
+    opacity: 1.0;
+}
+
+#bg2:hover {
+    transition: opacity 0.3s linear;
+    opacity: 1.0;
+}
+
+#bg3:hover {
+    transition: opacity 0.3s linear;
+    opacity: 1.0;
+}
+
+#bg4:hover {
+    transition: opacity 0.3s linear;
+    opacity: 1.0;
+}
+
+#bg5:hover {
+    transition: opacity 0.3s linear;
+    opacity: 1.0;
+}
+
+#bg6:hover {
+    transition: opacity 0.3s linear;
+    opacity: 1.0;
+}
+
+#bg7:hover {
+    transition: opacity 0.3s linear;
+    opacity: 1.0;
+}
+
+#bg8:hover {
+    transition: opacity 0.3s linear;
+    opacity: 1.0;
+}
+
+#bg9:hover {
+    transition: opacity 0.3s linear;
+    opacity: 1.0;
+}
+
+#middle {
+    background-color: black;
+    opacity: 0.8;
+    width: 50%;
+    height: 1125;
+    position: absolute;
+    left: 25%;
+    top: 0;
+}
+
+#imgTurn_all {
+    float: left;
+    margin-top: 6%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+#pictureTurn {
+    width: 95%;
+    width: 100%;
+}
+
+#menu {
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+    top: 3;
+}
+
+.main {
+    background-color: #e33535;
+    color: white;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: bold;
+    font-size: 24;
+    cursor: pointer;
+    text-align: center;
+    height: 35px;
+    line-height: 32px;
+    width: 175px;
+}
+
+.main:hover {
+    background-color: #4d4949;
+}
+
+li:hover {
+    background-color: #e33535;
+}
+
+.sub {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'Noto Serif TC', serif;
+    text-align: center;
+    font-weight: bold;
+    width: 175.2x;
+    font-size: 20;
+}
+
+.sub li {
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.item {
+    float: left;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#home {
+    position: absolute;
+    right: 10%;
+    bottom: 1.5%;
+}
+
+#copyright {
+    position: absolute;
+    left: 40%;
+    bottom: 1.5%;
+}
+
+a {
+    color: white;
+}

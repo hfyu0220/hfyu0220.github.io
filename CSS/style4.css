@@ -1,0 +1,186 @@
+        body {
+            background-color: #f1f3f4;
+        }
+
+        .des1 {
+            width: 20%;
+            height: 25%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+        }
+
+        .des2 {
+            width: 20%;
+            height: 40%;
+            position: absolute;
+            top: 0;
+            left: 20%;
+            cursor: pointer;
+        }
+
+        .des3 {
+            width: 20%;
+            height: 35%;
+            position: absolute;
+            top: 25%;
+            left: 0;
+            cursor: pointer;
+        }
+
+        .des4 {
+            width: 20%;
+            height: 40%;
+            position: absolute;
+            top: 60%;
+            left: 0;
+            cursor: pointer;
+        }
+
+        .des5 {
+            width: 40%;
+            height: 20%;
+            position: absolute;
+            top: 0;
+            left: 40%;
+            cursor: pointer;
+        }
+
+        .des6 {
+            width: 20%;
+            height: 45%;
+            position: absolute;
+            top: 0;
+            left: 80%;
+            cursor: pointer;
+        }
+
+        .des7 {
+            width: 20%;
+            height: 20%;
+            position: absolute;
+            top: 45%;
+            left: 80%;
+            cursor: pointer;
+        }
+
+        .des8 {
+            width: 20%;
+            height: 35%;
+            position: absolute;
+            top: 65%;
+            left: 80%;
+            cursor: pointer;
+        }
+
+        .des9 {
+            width: 30%;
+            height: 20%;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            cursor: pointer;
+        }
+
+        .des10 {
+            width: 30%;
+            height: 20%;
+            position: absolute;
+            top: 80%;
+            left: 20%;
+            cursor: pointer;
+        }
+
+        .des1:hover {
+            transition: opacity 0.5s linear;
+            opacity: 0;
+        }
+
+        .des2:hover {
+            transition: opacity 0.5s linear;
+            opacity: 0;
+        }
+
+        .des3:hover {
+            transition: opacity 0.5s linear;
+            opacity: 0;
+        }
+
+        .des4:hover {
+            transition: opacity 0.5s linear;
+            opacity: 0;
+        }
+
+        .des5:hover {
+            transition: opacity 0.5s linear;
+            opacity: 0;
+        }
+
+        .des6:hover {
+            transition: opacity 0.5s linear;
+            opacity: 0;
+        }
+
+        .des7:hover {
+            transition: opacity 0.5s linear;
+            opacity: 0;
+        }
+
+        .des8:hover {
+            transition: opacity 0.5s linear;
+            opacity: 0;
+        }
+
+        .des9:hover {
+            transition: opacity 0.5s linear;
+            opacity: 0;
+        }
+
+        .des10:hover {
+            transition: opacity 0.5s linear;
+            opacity: 0;
+        }
+
+        #logo {
+            width: 30%;
+            position: absolute;
+            top: 23%;
+            left: 45%;
+        }
+
+        #home {
+            width: 5%;
+            position: absolute;
+            top: 68%;
+            right: 21%;
+            opacity: 0.5;
+        }
+
+        #home:hover {
+            transition: opacity 0.5s linear;
+            opacity: 1;
+        }
+
+        #text {
+            position: absolute;
+            top: 39%;
+            right: 26%;
+            width: 22.5%;
+            height: auto;
+        }
+
+        iframe {
+            position: absolute;
+            width: 27%;
+            height: 35%;
+            top: 42.5%;
+            left: 21.5%;
+        }
+
+        audio {
+            position: absolute;
+            top: 73%;
+            left: 51%;
+            width: 23%;
+        }
